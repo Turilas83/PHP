@@ -1,6 +1,8 @@
 <?php 
 if (isset($_POST["tallennaNimi"])) {
-    setcookie("keksi", $tallennaNimi);
+    $cookie_name = "keksi";
+    $cookie_value = "kNimi";
+    setcookie($cookie_name , $cookie_value);
 }
 ?>
 
