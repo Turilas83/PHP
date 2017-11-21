@@ -1,0 +1,81 @@
+body {
+	margin: 0px;
+	background-color: white;
+	font-family: verdana, sans-serif;
+}
+
+header {
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	background-image: url(kuvat/marioYla.png);
+	background-size: cover;
+	height: 172px;	
+	letter-spacing: 0.2em;
+	text-align: right;
+	position: relative; 
+	
+	
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: red;
+}
+
+
+footer {
+	font-size: 12px;
+	background-color: rgb(199, 33, 40);
+	text-align: right;
+	padding: 3px 30px 3px 0px;
+	letter-spacing: 0.2em;
+	height: 60px;
+	color: white;
+}
+
+article {
+	font-size: 1em;
+	height: 615px;
+	vertical-align: top;
+	padding-left: 10px;
+	overflow-y: scroll;
+	background-color: snow;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+p {
+	margin-top: 0px;
+}
+
