@@ -30,7 +30,7 @@ elseif (isset($_POST["peruuta"])) {
     header("location: index.php");
     exit();
 } else {
-    // Tutkitaan, onko istunnossa elokuvaa
+    // Tutkitaan, onko istunnossa peliä
     if (isset ( $_SESSION ["peliOlio"] )) {
         // Otetaan istunnosta olio
         $peli = $_SESSION ["peliOlio"];
