@@ -3,12 +3,12 @@ require_once "peli.php";
 
 session_start();
 
-// Tutkitaan, onko istunnossa elokuvaa
+// Tutkitaan, onko istunnossa peliä
 if (isset ( $_SESSION ["peliOlio"] )) {
     // Otetaan istunnosta olio
     $peli = $_SESSION ["peliOlio"];
 } else {
-    // Tehdään tyhjä leffa
+    // Tehdään tyhjä peli
     $peli = new Peli();
 }
 if (isset($_POST["talleta"])) {
@@ -25,12 +25,6 @@ if (isset($_POST["talleta"])) {
     header("location: lisaaPeli.php");
     exit();
 }
-
-/* Laitetaan evästeisiin lisätyn elokuvan nimi ja lisäysaika
-setcookie ( "elokuva", $leffa->getNimi (), time () + 60 * 60 * 24 * 30 );
-$aika = date ( "d.m.Y", time () );
-setcookie ( "aika", $aika, time () + 60 * 60 * 24 * 30 ); */
-?> 
 
 <!DOCTYPE html>
 <html>
@@ -57,7 +51,7 @@ setcookie ( "aika", $aika, time () + 60 * 60 * 24 * 30 ); */
 		<h2>Tiedot on talletettu</h2>
 
 <?php
-	//print ("<p>Id: " . $leffa->getId ()) ;
+	//print ("<p>Id: " . $peli->getId ()) ;
 	print ("<br>Nimi: " . $peli->getNimi ()) ;
 	print ("<br>Tekijä: " . $peli->getTekija()) ;
 	print ("<br>Vuosi: " . $peli->getVuosi ()) ;
